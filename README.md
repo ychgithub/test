@@ -1,4 +1,6 @@
-# 测试
-## 也是测试
+# git的使用方法
+## GUI模式
+    使用[GitHub Desktop](https://desktop.github.com/),一切就迎刃而解了.
+## 命令行模式
+    略,太麻烦了.
 
-这个github好像很好用的样子,但是用起来怎么这么不顺手啊.
