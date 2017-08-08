@@ -1,0 +1,18 @@
+
+<form action="{% url 'test' %}" method="post">
+        <span>昵称 :</span>
+        <input id="name" type="text" name="nickname" class="error" placeholder="请输入昵称"/>
+
+        <span>邮箱 :</span>
+        <input id="email" type="email" value="" name="email" placeholder="请输入邮箱地址"/>
+
+        <span>联系地址 :</span>
+        <input id="address" type="text" value="" name="address" placeholder="请输入联系地址"/>
+
+        <span>留言 :</span>
+        <textarea id="message" name="message"  placeholder="请输入你的建议"></textarea>
+
+        <input type="submit" class="button" value="提交"/>
+
+    {% csrf_token %}
+</form>
