@@ -1,0 +1,10 @@
+<p>这是一个默认界面</p>
+
+{% if request.user.is_authenticated %}
+<p>当前为登录状态,用户名为{{ html_username }}</p>
+    <p><a href="{% url 'logout' %}">注销</a></p>
+{% else %}
+    <a href="{% url 'login' %}">登录</a>
+    <a href="{% url 'new' %}">注册</a>
+    <a href="/admin">后台</a>
+{% endif %}

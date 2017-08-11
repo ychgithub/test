@@ -1,0 +1,7 @@
+<form action="{% url 'forget' %}" method="post">
+
+        <input type="email" value="" name="email" placeholder="请输入邮箱地址"/>
+
+        <input type="submit" class="button" value="忘记并找回密码"/>
+    {% csrf_token %}
+</form>

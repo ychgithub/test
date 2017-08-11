@@ -1,0 +1,15 @@
+<form action="{% url 'login' %}" method="post">
+        <span>用户名 :</span>
+        <input type="text" name="username" placeholder="请输入用户名"/>
+        <span>密码</span>
+        <input type="password" name="password" placeholder="输入密码"/>
+        <a>验证码:</a>{{ html_login_forms.captcha }}
+        <input type="submit" class="button" value="登录"/>
+<p></p>
+{% for key,error in html_login_forms.errors.items %}
+    {{ key }}{{ error }}
+    {% endfor %}
+    {% csrf_token %}
+</form>
+<p></p>
+<a href="{% url 'forget' %}">忘记密码,找回</a>
